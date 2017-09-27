@@ -1,0 +1,17 @@
+print("Welcome to the Guess my Number Game!!")
+print("The computer will generate a random number between 1 and 100 and ask you to guess it!")
+print("Good Luck!!")
+import random
+number = random.randint(1,100)
+guess = int(input("Take a guess: "))
+tries = 1
+while number != guess:
+	if guess > number:
+		guess = int(input("Oops! Too High! Take a guess: "))
+	else:
+		guess = int(input("Oops! Too Low! Take a guess: "))
+	tries += 1 
+print("Great job!! The number was", number, " You guessed right in", tries,"tries!")
+input("\n\nPress the Enter key to exit.")
+
+
