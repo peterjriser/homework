@@ -1,5 +1,5 @@
 print("I'm going to guess your number between 1 and 100, if my guess is correct, type 'Correct'")
-print("if my guess is two high type 'High' ")
+print("if my guess is too high type 'High' ")
 print("If it's less than, press 'Low'")
 
 lower_bound = 0
