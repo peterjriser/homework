@@ -1,0 +1,24 @@
+#Messing around with the Binomial Asset Pricing Model
+#Setting up the variables
+import numpy as np
+import math
+observed_price = 40
+strike_price = 41
+Rf = .08
+sigma = .3
+T = 1
+N = 3
+H = T/N
+
+up = math.exp((Rf*H)+ sigma*(H**(.5)))
+down = math.exp((Rf*H)- sigma*(H**(.5)))
+
+probstar = (math.exp(Rf*H)-down)/(up-down)
+
+#the if statement
+if Cu or Cd > strike_price:
+	payoff = Cu or Cd - strike_price
+
+#the for loop
+for i in range(N):
+	Cu = observed_price*up and Cd = observed_price*down
