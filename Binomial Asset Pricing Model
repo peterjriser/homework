@@ -1,4 +1,5 @@
 #Messing around with the Binomial Asset Pricing Model
+
 #Setting up the variables
 import numpy as np
 import math
@@ -9,11 +10,18 @@ sigma = .3
 T = 1
 N = 3
 H = T/N
-
 up = math.exp((Rf*H)+ sigma*(H**(.5)))
 down = math.exp((Rf*H)- sigma*(H**(.5)))
-
 probstar = (math.exp(Rf*H)-down)/(up-down)
+
+#setting the array to zero
+binomial_tree = np.zeros((N+1,N+1))
+j = (N//20)
+#calculating out into the future
+for i in range(N):
+	binomial_tree[i][j+1] = observed_price*up and binomial_tree[i][j-1] = observed_price*down
+	observed_price = 	
+
 
 #the if statement for payoff
 if Cu or Cd > strike_price:
@@ -21,6 +29,3 @@ if Cu or Cd > strike_price:
 else:
 	payoff = 0
 
-#the for loop
-for i in range(N):
-	Cu = observed_price*up and Cd = observed_price*down
