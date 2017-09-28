@@ -15,9 +15,11 @@ down = math.exp((Rf*H)- sigma*(H**(.5)))
 
 probstar = (math.exp(Rf*H)-down)/(up-down)
 
-#the if statement
+#the if statement for payoff
 if Cu or Cd > strike_price:
 	payoff = Cu or Cd - strike_price
+else:
+	payoff = 0
 
 #the for loop
 for i in range(N):
