@@ -16,8 +16,8 @@ probstar = (math.exp(Rf*H)-down)/(up-down)
 
 #setting the array to zero
 binomial_tree = np.zeros((N+1,N+1))
-j = (N//20)
 #calculating out into the future
+j = (N//20)
 for i in range(N+1):
 	binomial_tree[i][j+1] = observed_price*up and binomial_tree[i][j-1] = observed_price*down
 	observed_price = #this needs to reassign the observed price...
