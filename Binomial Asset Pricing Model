@@ -15,13 +15,12 @@ down = math.exp((Rf*H)- sigma*(H**(.5)))
 probstar = (math.exp(Rf*H)-down)/(up-down)
 
 #setting the array to zero
-binomial_tree = np.zeros((N+1,N+1))
+tree = np.zeros((N+1,N+1))
 #calculating out into the future
 j = 1
 binomial_tree[0][0] = observed_price
 for i in range(1,N):
-	binomial_tree[0][i] = (binomial_tree[0][(i-1)])*up and binomial_tree[j][i] = (binomial_tree[0][(i-1)])*down
-	observed_price = #this needs to reassign the observed price...
+	tree[0][i] = (tree[0][(i-1)])*up and tree[j][i] = (tree[0][(i-1)])*down
 	j+= 1
 #can i have it refer to the one before it?
 
