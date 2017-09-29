@@ -20,7 +20,7 @@ tree = np.zeros((N+1,N+1))
 j = 1
 binomial_tree[0][0] = observed_price
 for i in range(1,N):
-	tree[0][i] = (tree[0][(i-1)])*up and tree[j][i] = (tree[0][(i-1)])*down
+	tree[0][i] = tree[0][(i-1)]*up and tree[j][i] = tree[0][(i-1)]*down
 	j+= 1
 #can i have it refer to the one before it?
 
