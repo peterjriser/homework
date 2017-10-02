@@ -28,9 +28,10 @@ for i in range(1,N):
 
 
 #the if statement for payoff European
-end_column = binomial_tree[0:N][N]
+end_column = tree[0:N][N]
 for i in range(N):
 	if end_column[i] > strike_price:
 		payoff = end_column - strike_price
 	else:
 		payoff = 0
+print(end_column)
