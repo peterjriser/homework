@@ -34,4 +34,5 @@ for i in range(N):
 		payoff = end_column - strike_price
 	else:
 		payoff = 0
-print(end_column)
+	print(payoff)
+
