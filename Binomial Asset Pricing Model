@@ -33,9 +33,10 @@ payoffs = []
 for i in range(N):
 	if end_column[i] > strike_price:
 		payoff.append = end_column[i] - strike_price
-		print(payoff)
 	else:
-		return 0 
+		return 0
+price = payoff * probstar
+print(price)
 
 #do I need to weight the payoffs by probability and sum them to get the price
 #something like P* times payoff summed up, that that means I have to create a vector that I can sum
