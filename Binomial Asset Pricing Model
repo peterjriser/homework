@@ -33,8 +33,6 @@ payoffs = []
 for i in range(N):
 	if end_column[i] > strike_price:
 		payoff.append = end_column[i] - strike_price
-	else:
-		return 0
 price = payoff * probstar
 print(price)
 
