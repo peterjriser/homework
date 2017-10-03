@@ -32,7 +32,7 @@ end_column = tree[0:N][N-1]
 payoff = []
 for i in range(N):
 	if end_column[i] > strike_price:
-		payoff.append = end_column[i] - strike_price
+		payoff.append(end_column[i] - strike_price)
 price = payoff * probstar
 print(price)
 
