@@ -31,9 +31,8 @@ for i in range(1,N):
 end_column = tree[0:N][N-1]
 for i in range(N):
 	if end_column[i] > strike_price:
-		payoff = end_column - strike_price
+		payoff = end_column[i] - strike_price
 		print(payoff)
 	else:
-		payoff = 0
-		print(payoff)
+		print("0")
 
