@@ -14,8 +14,8 @@ up = math.exp((Rf*H)+ sigma*(H**(.5)))
 down = math.exp((Rf*H)- sigma*(H**(.5)))
 probstar = (math.exp(Rf*H)-down)/(up-down)
 
-#setting the array to zero
-tree = np.zeros((N+1,N+1))
+#setting up the empty array
+tree = np.empty((N+1,N+1))
 #calculating out into the future
 j = 1
 tree[0][0] = observed_price
