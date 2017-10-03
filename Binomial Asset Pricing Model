@@ -28,7 +28,7 @@ for i in range(1,N):
 
 
 #the if statement for payoff European
-end_column = tree[0:N][N]
+end_column = tree[0:(N-1)][N-1]
 for i in range(N):
 	if end_column[i] > strike_price:
 		payoff = end_column - strike_price
