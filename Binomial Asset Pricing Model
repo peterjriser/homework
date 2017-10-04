@@ -33,9 +33,14 @@ def pricing_the_security(X, Rf, sigma, T, N, P):
 	end_column = tree[0:N][N-1]
 	price = []
 	for i in range(N):
-		if end_column[i] > X:
-			price.append((end_column[i] - X)*probstar)
+		price.append(payoff(X, end_column[i])*probstar)
 	print(sum(price))
+
+def payoff(X, Pt):
+	if Pt > X:
+		return Pt - X
+	else:
+		return 0
 
 #do I need to weight the payoffs by probability and sum them to get the price
 #something like P* times payoff summed up, that that means I have to create a vector that I can sum
