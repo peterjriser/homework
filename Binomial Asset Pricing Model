@@ -38,4 +38,6 @@ print(price)
 
 #do I need to weight the payoffs by probability and sum them to get the price
 #something like P* times payoff summed up, that that means I have to create a vector that I can sum
+#except that each probability is different... and that needs to be accounted for.. Is that already accounted for in the model?
+
 
