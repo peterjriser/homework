@@ -14,7 +14,8 @@ def pricing_the_security(X, Rf, sigma, T, N, P):
 	H = T/N
 	up = np.exp((Rf*H)+ sigma*(H**(.5)))
 	down = np.exp((Rf*H)- sigma*(H**(.5)))
-	probstar = (np.exp(Rf*H)-down)/(up-down)
+	pu = (np.exp(Rf*H)-down)/(up-down)
+	pd = 1 - pu
 
 
 #setting up the empty array
@@ -43,10 +44,6 @@ def pricing_the_security(X, Rf, sigma, T, N, P):
 
 def payoff(Pt, X):
 	return np.maximun(Pt - X, 0.0)
-
-#do I need to weight the payoffs by probability and sum them to get the price
-#something like P* times payoff summed up, that that means I have to create a vector that I can sum
-#except that each probability is different... and that needs to be accounted for.. Is that already accounted for in the model?
 
 pricing_the_security(X, Rf, sigma, T, N, P)
 
