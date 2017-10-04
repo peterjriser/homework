@@ -16,6 +16,7 @@ def pricing_the_security(X, Rf, sigma, T, N, P):
 	down = np.exp((Rf*H)- sigma*(H**(.5)))
 	probstar = (np.exp(Rf*H)-down)/(up-down)
 
+
 #setting up the empty array
 	tree = np.empty((N+1,N+1))
 #calculating out into the future
@@ -48,4 +49,6 @@ def payoff(Pt, X):
 #except that each probability is different... and that needs to be accounted for.. Is that already accounted for in the model?
 
 pricing_the_security(X, Rf, sigma, T, N, P)
+
+# i need to keep track of up up up and down down down and up up down etc
 
