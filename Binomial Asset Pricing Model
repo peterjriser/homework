@@ -30,10 +30,10 @@ for i in range(1,N):
 #the if statement for payoff European
 end_column = tree[0:N][N-1]
 payoff = []
+pri
 for i in range(N):
 	if end_column[i] > strike_price:
-		payoff.append(end_column[i] - strike_price)
-price = payoff * probstar
+		payoff.append((end_column[i] - strike_price)*probstar))
 print(price)
 
 #do I need to weight the payoffs by probability and sum them to get the price
