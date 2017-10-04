@@ -3,40 +3,43 @@
 #Setting up the variables
 import numpy as np
 import math
-observed_price = 40
-strike_price = 41
+P = 40
+X = 41
 Rf = .08
 sigma = .3
 T = 1
 N = 3
-H = T/N
-up = math.exp((Rf*H)+ sigma*(H**(.5)))
-down = math.exp((Rf*H)- sigma*(H**(.5)))
-probstar = (math.exp(Rf*H)-down)/(up-down)
+
+def pricing_the_security(X, Rf, sigma, T, N, P)
+	H = T/N
+	up = math.exp((Rf*H)+ sigma*(H**(.5)))
+	down = math.exp((Rf*H)- sigma*(H**(.5)))
+	probstar = (math.exp(Rf*H)-down)/(up-down)
 
 #setting up the empty array
-tree = np.empty((N+1,N+1))
+	tree = np.empty((N+1,N+1))
 #calculating out into the future
-j = 1
-tree[0][0] = observed_price
-for i in range(1,N):
-	tree[0][i] = tree[0][(i-1)]*up
-	tree[j][i] = tree[0][(i-1)]*down
-	j+= 1
+	j = 1
+	tree[0][0] = P
+	for i in range(1,N):
+		tree[0][i] = tree[0][(i-1)]*up
+		tree[j][i] = tree[0][(i-1)]*down
+		j+= 1
 #can i have it refer to the one before it?
 #this may only do the top two rows, there has to be a sleeker way to do this
 
 
 #the if statement for payoff European
-end_column = tree[0:N][N-1]
-price = []
-for i in range(N):
-	if end_column[i] > strike_price:
-		price.append((end_column[i] - strike_price)*probstar)
-print(price)
+	end_column = tree[0:N][N-1]
+	price = []
+	for i in range(N):
+		if end_column[i] > X:
+			price.append((end_column[i] - X)*probstar)
+	print(sum(price))
 
 #do I need to weight the payoffs by probability and sum them to get the price
 #something like P* times payoff summed up, that that means I have to create a vector that I can sum
 #except that each probability is different... and that needs to be accounted for.. Is that already accounted for in the model?
 
+pricing_the_security(X, Rf, sigma, T, N, P)
 
