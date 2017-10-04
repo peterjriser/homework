@@ -10,7 +10,7 @@ sigma = .3
 T = 1
 N = 3
 
-def pricing_the_security(X, Rf, sigma, T, N, P)
+def pricing_the_security(X, Rf, sigma, T, N, P):
 	H = T/N
 	up = math.exp((Rf*H)+ sigma*(H**(.5)))
 	down = math.exp((Rf*H)- sigma*(H**(.5)))
