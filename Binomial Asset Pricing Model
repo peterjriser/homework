@@ -33,7 +33,7 @@ payoff = []
 pri
 for i in range(N):
 	if end_column[i] > strike_price:
-		payoff.append((end_column[i] - strike_price)*probstar))
+		payoff.append((end_column[i] - strike_price)*probstar)
 print(price)
 
 #do I need to weight the payoffs by probability and sum them to get the price
