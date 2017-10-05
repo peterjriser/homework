@@ -48,4 +48,5 @@ def payoff(Pt, X):
 pricing_the_security(X, Rf, sigma, T, N, P)
 
 # i need to keep track of up up up and down down down and up up down etc
+# binom.pmf
 
