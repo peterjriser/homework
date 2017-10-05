@@ -32,7 +32,7 @@ def pricing_the_security(X, Rf, sigma, T, N, P):
 
 
 #pulling out the last column
-	end_column = tree[0:N][N-1]
+	end_column = tree[0:N][N+1]
 	price = []
 	for i in range(N):
 		price.append(payoff(X, end_column[i])*probstar)
