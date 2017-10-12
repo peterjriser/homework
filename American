@@ -1,52 +1,60 @@
 #Messing around with the Binomial Asset Pricing Model
+import numpy as np
+from scipy.stats import binom
 
-#Setting up the variables
-P = 40
-X = 41
-Rf = .08
-sigma = .3
-T = 1
-N = 3
+class VanillaOption(object):
+	def __init__(self, strike, expiry):
+		self.strike = strike
+		self.expiry = expiry
+	def value(self,spot):
+		pass
 
-def pricing_the_security(X, Rf, sigma, T, N, P):
-	import numpy as np
-	from scipy.stats import binom
+class VanillaCallOption(VanillaOption):
+	def value(self, spot):
+		max = np.maximum(spot - self.strike, 0.0)
+		return max
+class VanillaPutOption(VanillaOption):
+	def value(self, spot):
+		max = np.maximum(self.strike - spot, 0.0)
+		return max
+
+def EuropeanBinomial(option, S, Rf, beta, sigma, T, N):
 	H = T/N
-	up = np.exp((Rf*H)+ sigma*(H**(.5)))
-	down = np.exp((Rf*H)- sigma*(H**(.5)))
-	pu = (np.exp(Rf*H)-down)/(up-down)
-	pd = 1 - pu
-
+	up = np.exp((Rf-beta)*H+ sigma*(np.sqrt(H))) 
+	down = np.exp((Rf-beta)*H- sigma*(np.sqrt(H)))
+	pu = (np.exp((Rf-beta)*H)-down)/(up-down)
+	pd = 1- pu
+	numSteps = N
+	numNodes = numSteps + 1
+	spotT = 0.0
+	callT = 0.0
+	for i in range(numNodes):
+		spotT = S * (up ** (numSteps - i)) * (down ** (i))
+		callT += option.value(spotT) * binom.pmf(numSteps - i, numSteps, pu)
+	callPrice = callT * np.exp(-Rf * T)
+	return callPrice
+        
+def main():
+	P = 41
+	K = 40
+	Rf = 0.08
+	T = 1
+	N = 3
+	beta = 0.0
+	sigma = 0.30
+	option = VanillaPutOption(K, T)
+	callPrice = EuropeanBinomial(option, P, Rf, beta, sigma, T, N)
+	print("The Two Period European Binomial Price is = {0:.4f}".format(callPrice))
+                                               
 
 #setting up the empty array
 	tree = np.empty((N+1,N+1))
-#calculating out into the future
+#i need to iterate out first, his big hint is that it involves recursing back.
+#calculating out into the future. In the equation above I set numnodes or the range that for loop runs over to some function,
+#of the range index
 	j = 1
 	tree[0][0] = P
 	for i in range(1,N):
 		tree[0][i] = tree[0][(i-1)]*up
 		tree[j][i] = tree[0][(i-1)]*down
 		j+= 1
-#can i have it refer to the one before it?
-#this may only do the top two rows, there has to be a sleeker way to do this
-
-
-#pulling out the last column
-	end_column = tree[0:N][N+1]
-	price = []
-	for i in range(N):
-		price.append(payoff(X, end_column[i])*probstar)
-	weighted_sum = sum(price)
-	discounted_price = np.exp((Rf-sigma)*H)*weighted_sum)
-	print("The value of the option today is, discounted_price,")
-	
-	
-
-def payoff(Pt, X):
-	return np.maximun(Pt - X, 0.0)
-
-pricing_the_security(X, Rf, sigma, T, N, P)
-
-# i need to keep track of up up up and down down down and up up down etc
-# binom.pmf
-
