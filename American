@@ -38,7 +38,7 @@ def AmericanBinomial(option, S, Rf, beta, sigma, T, N):
 		for j in range(i+1):
 			array2[j] = du * array2[j] + dp * array2[j+1]
 			array1[j] = array1[j] / up
-			array2[j] = np.maximum(array1[j], option.value(array2[j]))
+			array2[j] = np.maximum(array2[j], option.value(array1[j]))
 	return array2[0]
         
 	
