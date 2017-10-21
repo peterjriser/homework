@@ -24,7 +24,7 @@ def AmericanBinomial(option, S, Rf, beta, sigma, T, N):
 	down = np.exp((Rf-beta)*H- sigma*(np.sqrt(H)))
 	pu = (np.exp((Rf-beta)*H)-down)/(up-down)
 	pd = 1- pu
-	discount = np.exp(-Rf * T)
+	discount = np.exp(-Rf * H)
 	du = pu * discount
 	dp = pd * discount
 	numSteps = N
