@@ -18,7 +18,7 @@ class VanillaPutOption(VanillaOption):
 		max = np.maximum(self.strike - spot, 0.0)
 		return max
 
-def AmericalBinomial(option, S, Rf, beta, sigma, T, N):
+def AmericanBinomial(option, S, Rf, beta, sigma, T, N):
 	H = T/N
 	up = np.exp((Rf-beta)*H+ sigma*(np.sqrt(H))) 
 	down = np.exp((Rf-beta)*H- sigma*(np.sqrt(H)))
