@@ -53,6 +53,6 @@ def main():
 	sigma = 0.30
 	option = VanillaPutOption(K, T)
 	callPrice = EuropeanBinomial(option, P, Rf, beta, sigma, T, N)
-	print("The Two Period European Binomial Price is = {0:.4f}".format(callPrice))
+	print("The American Binomial Price is = {0:.4f}".format(callPrice))
 	
 main()
