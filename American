@@ -24,16 +24,24 @@ def AmericalBinomial(option, S, Rf, beta, sigma, T, N):
 	down = np.exp((Rf-beta)*H- sigma*(np.sqrt(H)))
 	pu = (np.exp((Rf-beta)*H)-down)/(up-down)
 	pd = 1- pu
+	discount = np.exp(-Rf * T)
+	du = pu * discount
+	dp = pd * discount
 	numSteps = N
 	numNodes = numSteps + 1
-	spotT = 0.0
-	callT = 0.0
+	array1 = np.zeros(numNodes)
+	array2 = np.zeros(numNodes)
 	for i in range(numNodes):
-		spotT = S * (up ** (numSteps - i)) * (down ** (i))
-		callT += option.value(spotT) * binom.pmf(numSteps - i, numSteps, pu)
-	callPrice = callT * np.exp(-Rf * T)
-	return callPrice
+		array1[i] = S * (up ** (numSteps - i)) * (down ** (i))
+		array2[i] = option.value(array1[i])
+	for i in range((numSteps-1), -1, -1):
+		for j in range(i+1):
+			array2[j] = du * array2[j] + dp * array2[j+1]
+			array1[j] = array1[j] / u
+			array2[j] = np.maximum(array1[j], array2[j])
+	return array2[0]
         
+	
 	
 def main():
 	P = 41
@@ -46,13 +54,5 @@ def main():
 	option = VanillaPutOption(K, T)
 	callPrice = EuropeanBinomial(option, P, Rf, beta, sigma, T, N)
 	print("The Two Period European Binomial Price is = {0:.4f}".format(callPrice))
-                                               
-
-#setting up the empty array
-	tree = np.empty((N+1,N+1))
-#i need to iterate out first, his big hint is that it involves recursing back.
-#calculating out into the future. In the equation above I set numnodes or the range that for loop runs over to some function,
-#of the range index
-	j = 1
-	tree[0][0] = P
-	for i in range(
+	
+main()
