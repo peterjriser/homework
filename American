@@ -18,7 +18,7 @@ class VanillaPutOption(VanillaOption):
 		max = np.maximum(self.strike - spot, 0.0)
 		return max
 
-def EuropeanBinomial(option, S, Rf, beta, sigma, T, N):
+def AmericalBinomial(option, S, Rf, beta, sigma, T, N):
 	H = T/N
 	up = np.exp((Rf-beta)*H+ sigma*(np.sqrt(H))) 
 	down = np.exp((Rf-beta)*H- sigma*(np.sqrt(H)))
@@ -34,6 +34,7 @@ def EuropeanBinomial(option, S, Rf, beta, sigma, T, N):
 	callPrice = callT * np.exp(-Rf * T)
 	return callPrice
         
+	
 def main():
 	P = 41
 	K = 40
