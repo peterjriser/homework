@@ -1,0 +1,15 @@
+S = 41
+K = 40
+r = 0.08
+v = .30
+T = 1.0
+q = 0.0
+from scipy.stats import norm
+import numpy as np
+d1 = ((np.log(S/K)) + (r -q+ .0 *v*v) * T)/(v*np.sqrt(T))
+
+norm.cdf(d1)
+d2 = d1 -v * np.sqrt(T)
+
+c = S * np.exp(-q * T) * norm.cdf(d1)- K *  np.exp(-r * T) * norm.cdf(d2)
+c
