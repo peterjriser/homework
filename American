@@ -29,17 +29,17 @@ def AmericanBinomial(option, S, Rf, beta, sigma, T, N):
 	dp = pd * discount
 	numSteps = N
 	numNodes = numSteps + 1
-	array1 = np.zeros(numNodes)
-	array2 = np.zeros(numNodes)
+	spot_price = np.zeros(numNodes)
+	payoff = np.zeros(numNodes)
 	for i in range(numNodes):
-		array1[i] = S * (up ** (numSteps - i)) * (down ** (i))
-		array2[i] = option.value(array1[i])
+		spot_price[i] = S * (up ** (numSteps - i)) * (down ** (i))
+		payoff[i] = option.value(spot_price[i])
 	for i in range((numSteps-1), -1, -1):
 		for j in range(i+1):
-			array2[j] = du * array2[j] + dp * array2[j+1]
-			array1[j] = array1[j] / up
-			array2[j] = np.maximum(array2[j], option.value(array1[j]))
-	return array2[0]
+			payoff[j] = du * payoff[j] + dp * payoff[j+1]
+			spot_price[j] = spot_price[j] / up
+			payoff[j] = np.maximum(payoff[j], option.value(spot_price[j]))
+	return payoff[0]
         
 	
 	
