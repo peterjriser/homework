@@ -1,0 +1,23 @@
+cdef extern from "cpisum.h"
+  double
+Cython types:
+ bint - boolean
+ int
+ float
+ double
+ long
+ char
+Hard thing about Cython:
+Reasoning about where we are, and how much we want in C
+
+Cython book:
+
+cython.readthedocs.io/en/latest
+
+
+Makefile - make
+(morphs to C file)
+
+cimport 
+
+cpdef
