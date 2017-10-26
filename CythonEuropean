@@ -1,0 +1,39 @@
+import numpy as c
+from scipy.stats import binom
+
+
+cpdef CallOption(K,S):
+		max = c.maximum(S - K, 0.0)
+		return max
+    
+cpdef PutOption:
+		max = c.maximum(K - S, 0.0)
+		return max
+
+cpdef EuropeanBinomial(K, S, Rf, beta, sigma, T, N):
+	H = T/N
+	up = c.exp((Rf-beta)*H+ sigma*(c.sqrt(H))) 
+	down = c.exp((Rf-beta)*H- sigma*(c.sqrt(H)))
+	pu = (c.exp((Rf-beta)*H)-down)/(up-down)
+	pd = 1- pu
+	numSteps = N
+	numNodes = numSteps + 1
+	spotT = 0.0
+	callT = 0.0
+	for i in range(numNodes):
+		spotT = S * (up ** (numSteps - i)) * (down ** (i))
+		callT += CallOption(spotT,K) * binom.pmf(numSteps - i, numSteps, pu)
+	callPrice = callT * c.exp(-Rf * T)
+	return callPrice
+        
+cdef main():
+	cdef int P = 41
+	cdef int K = 40
+	cdef float Rf = 0.08
+	cdef int T = 1
+	cdef int N = 3
+	cdef float beta = 0.0
+	cdef float sigma = 0.30
+	callPrice = EuropeanBinomial(K, P, Rf, beta, sigma, T, N)
+	print("The Two Period European Binomial Price is = {0:.4f}".format(callPrice))
+                                                
