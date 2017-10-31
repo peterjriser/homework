@@ -50,5 +50,6 @@ cdef class AmericanBinomialEngine(BinomialEngine):
 
         cdef double[:] spot_t = np.empty(numNodes, dtype=np.float64)
         cdef double[:] call_t = np.empty(numNodes, dtype=np.float64)
+        
 
 
