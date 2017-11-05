@@ -2,18 +2,18 @@
 import numpy as np
 from scipy.stats import binom
 
-class VanillaOption(object):
+class StrawberryOption(object):
 	def __init__(self, strike, expiry):
 		self.strike = strike
 		self.expiry = expiry
 	def value(self,spot):
 		pass
 
-class VanillaCallOption(VanillaOption):
+class StrawberryCallOption(VanillaOption):
 	def value(self, spot):
 		max = np.maximum(spot - self.strike, 0.0)
 		return max
-class VanillaPutOption(VanillaOption):
+class StrawberryPutOption(VanillaOption):
 	def value(self, spot):
 		max = np.maximum(self.strike - spot, 0.0)
 		return max
@@ -51,7 +51,7 @@ def main():
 	N = 3
 	beta = 0.0
 	sigma = 0.30
-	option = VanillaPutOption(K, T)
+	option = StrawberryPutOption(K, T)
 	callPrice = AmericanBinomial(option, P, Rf, beta, sigma, T, N)
 	print("The American Binomial Price is = {0:.4f}".format(callPrice))
 	
