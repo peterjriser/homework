@@ -25,7 +25,7 @@ Clearly, by virtue of my own experience as well, the study of markets and prices
 
 ### The Informational Role of Markets
 
-My favorite academic paper is by Richard Roll. His work described the informational role of prices in a powerful way. The traders conveyed information about weather in a more precise way than the weathermen did. They anticipated freezes and heavy rainfall more efficiently becuase it was predictive of the value of orange futures. Justin Wolfers from the Wharton school recently wrote a paper about predictive and pseudo-markets. He wrote:
+My favorite academic paper is by Richard Roll. His work described the informational role of prices in a powerful way. The traders predicted information about weather in a more precise way than the weathermen did. They anticipated freezes and heavy rainfall more efficiently becuase it was predictive of the value of orange futures. Justin Wolfers from the Wharton school recently wrote a paper about predictive and pseudo-markets. He wrote:
 
 > "these markets efficiently aggregate disperse information, and the lessons from empirical applications which show that market generated forecasts typically outperform most moderately sophisticated benchmarks"
 
