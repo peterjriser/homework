@@ -6,7 +6,7 @@ ECON 5350
 
 > This question stems somewhat from James Buchanan’s speech on the subject and touches a lot of what it means to be an economist today. There are a lot of things that an Economist could be doing. Buchanan talks about how there is a lack of emphasis on markets, and an overemphasis on optimizing utility constraints, he talks about how economics, partly because of Buchanan’s own work in public choice, has departed from its fundamental focus on markets.
 
-> :In this paper I endeavor to answer the question: What should Computational Economists do? I don’t pretend to have perfect answers to such a complex question, and I have three main thoughts: 
+> In this paper I endeavor to answer the question: What should Computational Economists do? I don’t pretend to have perfect answers to such a complex question, and I have three main thoughts: 
 
 > -  Economists should focus on arbitrage.
 > -  Economists should focus on the informational role of markets.
@@ -57,4 +57,10 @@ ECON 5350
 
 > Nowadays, algorithm driven trades comprise a large chunk of the transactions in the market. It’s time that Computational Economists take a deeper look and use technology to create better models of what is really going on in the world of trade. Our world. 
 
+### Works Cited
 
+Adam Smith
+Justin Wolfert
+Friederich Hayek
+George Tyson "No Time is There"
+James Buchanan
