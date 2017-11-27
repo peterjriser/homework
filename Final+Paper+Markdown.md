@@ -59,10 +59,10 @@ ECON 5350
 
 ### Works Cited
 
-Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (Cannan ed.), in 2 vols. [1776] <br>
-Wolfers, Justin, and Eric Zitzewitz. Prediction Markets. No. 10504. National Bureau of Economic Research, Inc, 2004. <br>
-Hayek, Friedrich August. "The use of knowledge in society." The American economic review (1945): 519-530. <br>
-George Tyson "No Time is There" <br>
-Goldberg, David E., and John H. Holland. "Genetic algorithms and machine learning." Machine learning 3.2 (1988): 95-99. <br>
-Buchanan, James M. "What should economists do?." Southern Economic Journal (1964): 213-222. <br>
-Roll, Richard. "Orange Juice and Weather." The American Economic Review 74.5 (1984): 861-880.
+- Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (Cannan ed.), in 2 vols. [1776] <br>
+- Wolfers, Justin, and Eric Zitzewitz. Prediction Markets. No. 10504. National Bureau of Economic Research, Inc, 2004. <br>
+- Hayek, Friedrich August. "The use of knowledge in society." The American economic review (1945): 519-530. <br>
+- George Tyson "No Time is There" <br>
+- Goldberg, David E., and John H. Holland. "Genetic algorithms and machine learning." Machine learning 3.2 (1988): 95-99. <br>
+- Buchanan, James M. "What should economists do?." Southern Economic Journal (1964): 213-222. <br>
+- Roll, Richard. "Orange Juice and Weather." The American Economic Review 74.5 (1984): 861-880.
