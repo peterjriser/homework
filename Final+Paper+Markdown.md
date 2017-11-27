@@ -57,6 +57,4 @@ ECON 5350
 
 > Nowadays, algorithm driven trades comprise a large chunk of the transactions in the market. It’s time that Computational Economists take a deeper look and use technology to create better models of what is really going on in the world of trade. Our world. 
 
-More ideas, about prediction markets, which gives you some information about what people are really thinking(candidates, project completion, student goverment) .... Natural Language Processing
-Using machine learning
 
