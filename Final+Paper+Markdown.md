@@ -59,8 +59,8 @@ ECON 5350
 
 ### Works Cited
 
-Adam Smith
-Justin Wolfert
-Friederich Hayek
-George Tyson "No Time is There"
+Adam Smith <br>
+Justin Wolfert <br>
+Friederich Hayek <br>
+George Tyson "No Time is There" <br>
 James Buchanan
