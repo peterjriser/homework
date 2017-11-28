@@ -73,11 +73,6 @@ Prediction and psuedo-markets are a huge area that computational economists need
 
 Computational Economists can glean some enormous insights into the true nature of exchange as they embrace the fuzziness and messiness of the real world. They now have tools they haven’t had before to begin working on these problems: Random number generators from a myriad of different distributions, insane amounts of computing power at their fingertips. It’s not time to be shy about trying out new things, and using the power of open source, machine learning and AI to tap into the knowledge that other disciplines have to offer. It’s time that Computational Economists take a deeper look and use technology to create better models of what is really going on in the world of trade.
 
-Albert Einstein once said: 
-> "If I had only one hour to save the world, I would spend fifty-five minutes defining the problem, and only five minutes finding the solution."
-
-At the end of the day, it is clear to me that the problem of understanding trade, and the informational role of prices is the most fundamental to a computational economist. There a number of different ways to accomplish that goal, and I hope that some of these suggestions are insightful
-
 ### Works Cited
 
 - Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (Cannan ed.), in 2 vols. [1776] <br>
