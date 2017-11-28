@@ -4,7 +4,7 @@ A01536059 <br>
 ECON 5350
 ## What Should Computational Economists Do?
 
-This question stems somewhat from James Buchanan’s speech on the subject and touches a lot of what it means to be an economist today. There are a lot of things that an Economist could be doing. Buchanan talks about how there is a lack of emphasis on markets, and an overemphasis on optimizing utility constraints, he talks about how economics, partly because of Buchanan’s own work in public choice, has departed from its fundamental focus on markets.
+This question stems somewhat from James Buchanan’s speech on the subject of "What should economists do?" and touches a lot of what it means to be an economist today. There are a lot of different things that an Economist could be doing. Buchanan talks about how there is a lack of emphasis on markets, and an overemphasis on optimizing utility constraints, he talks about how economics, partly because of Buchanan’s own work in public choice, has departed from its fundamental focus on markets.
 
 In this paper I endeavor to answer the question: What should Computational Economists do? I don’t pretend to have perfect answers to such a complex question, and I have four main thoughts: 
 
@@ -19,7 +19,7 @@ Markets are a magical thing, I recall my first Econ 1500 class, and learning abo
 
 After that though, Economics classes grew less and less exciting as we departed from what James Buchanan calls “Catallactics” or the study of exchange. Study became all about optimizing utility functions and solving the production function and studying tariffs and taxes. By the way, all of that study was valuable and interesting in its own right, and did have a little bit to do with markets, but markets never were at the heart of the matter after that first class. 
 
-My study of markets has been a little limited as a result of this, but I get to observe cool arbitrage opportunities all the time. Recently, I am working on an algorithm to pull down potential buy and sell deals from Amazon. The spreads on this are ridiculous and if you choose wisely then you can get some products that just fly off the shelves. If Computational Economists were to focus more on arbitrage opportunities like this, their time would be much better spent. One area of specific interest is studying the evolution of new markets, how do you gauge demand for a product that doesn’t yet exist? Or will exist in a new form? The development of some intuitive science around those emerging markets would be engaging.
+My study of markets has been a little limited as a result of this, but I get to observe cool arbitrage opportunities in the real market all the time. Recently, I am working on an algorithm to pull down potential buy and sell deals from Amazon with webscraping. The spreads when you get wholesale accounts are sometimes seventy percent and if you choose wisely then you can get some products that just fly off the shelves. If Computational Economists were to focus more on arbitrage opportunities like this, their time would be much better spent. One area of specific interest is studying the evolution of new markets, how do you gauge demand for a product that doesn’t yet exist? Or will exist in a new form? The development of some intuitive science around those emerging markets would be engaging.
 
 Clearly, by virtue of my own experience as well, the study of markets and prices is much more central to economics than the status quo would indicate. Economists should focus on exchange, trade and arbitrage.
 
