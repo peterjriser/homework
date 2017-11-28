@@ -44,7 +44,7 @@ One of the ways to decipher meaning through the noise that we are learning about
 
 In George Dyson’s talk there was another comment about noise: John von Neumann and the other engineers faced a serious problem, some of the receptors in the Eniac (one of the first computers) were particularly receptive and picked up a lot of noise, in addition to the dots and dashes it was being fed. The solution was to shorten the distance from signal to receptor, and reduce the noise. Monte Carlo studies allow us to do something quite like this, by simulating many times, we are doing the same thing as reducing the distance between signal and receptor, we are weeding out the noise.
 
-If Friederich Hayek, the famed Economist, is to be believed, then prices and markets do an incredible job of conveying information. After all, he is an Austrian, and since I lived in Vienna for two years, I trust him. If that is true, then one of the prerogatives of the Computational Economist is to embrace the noise of the market and find meaning anyways using these great tools we have in random number generators and computers that keep getting  faster and faster.
+Clearly, then, one of the prerogatives of the Computational Economist is to embrace the noise of the market and find meaning anyways using these great tools we have in random number generators, simulation and computers that keep getting faster and faster.
 
 ### Using Open Source to Innovate New Models to Better Explain the World
 Professor Tyler Brough of Utah State shared a great story the other day in lecture that illustrates the idea that we have poor models pretty p. In order to model the profitability of hedging practices, some professors made some assumptions. Their assumptions about perfect competition and perfect information literally assumed away the possibility of an arbitrage opportunity with this hedging practice. They fixed the race. Any testing they did would just prove their assumptions.
@@ -58,13 +58,25 @@ There are countless examples of machine learning and AI enhancing the models we 
 Computational Economists have incredible tools in the computer to run a gazillion simulations to better understand the real world of markets. They have the capacity to tweak their assumptions and better understand how their assumptions drive their model. As they do so, and as they should, Computational Economists will continue to innovate better models that do a better job of striking at the heart of what is really going on.
 
 ### Summary
-Again, I don’t really pretend to know all the answers, but it’s clear to me that Computational Economists aren’t even really trying to answer the questions they should be. Economics is the study of “the propensity to truck, barter and exchange one thing for another” (Adam Smith), and it is folly to think that we know all there is to know about it. In particular, delving into the study of the creation of new markets has some potentially fascinating answers.
+Albert Einstein once said: 
+> "If I had only one hour to save the world, I would spend fifty-five minutes defining the problem, and only five minutes finding the solution."
 
-Prediction and psuedo-markets are a huge area that computational economists need to innovate in and study. They may even want to consider creating new "idea" markets in order to understand the informational value of prices to a better degree and understand its limitations.
+At the end of the day, it is clear to me that the problem of understanding trade and the informational role of prices is the most fundamental to a computational economist. There a number of different ways to accomplish that goal, and I hope that some of these suggestions are insightful.
 
-Computational Economists can glean some enormous insights into the true nature of exchange as they embrace the fuzziness and messiness of the real world. They now have tools they haven’t had before to begin working on these problems. Random number generators from a myriad of different distributions, insane amounts of computing power at their fingertips, it’s not time to be shy about trying out new things, and using to power of open source, machine learning and AI to tap into the knowledge that other disciplines have to offer. 
+Again, I don’t really pretend to know all the answers, but it’s clear to me that Computational Economists aren’t even really trying to answer the questions they should be. Economics is the study of:
 
-Nowadays, algorithm driven trades comprise a large chunk of the transactions in the market. It’s time that Computational Economists take a deeper look and use technology to create better models of what is really going on in the world of trade. Our world. 
+> “the (human) propensity to truck, barter and exchange one thing for another” - Adam Smith
+
+and it is folly to think that we know all there is to know about markets. In particular, delving into the study of the creation of new markets has some potentially fascinating answers.
+
+Prediction and psuedo-markets are a huge area that computational economists need to innovate in and study. They may even want to consider creating new idea-markets in order to understand the informational value of prices to a better degree and understand its limitations. Frederich Hayek, the famed Austrian economist wrote in his paper *The Use of Information in Society* that the reason we can't have anything like a central planner, in government, in business, in the non-profit space, is because no central planner has all of the information that he needs, or is able to make decisions quickly enough. Perhaps, if computational economists were to study idea-markets in-depth, then we could find powerful solutions to the problems that this world faces.
+
+Computational Economists can glean some enormous insights into the true nature of exchange as they embrace the fuzziness and messiness of the real world. They now have tools they haven’t had before to begin working on these problems: Random number generators from a myriad of different distributions, insane amounts of computing power at their fingertips. It’s not time to be shy about trying out new things, and using the power of open source, machine learning and AI to tap into the knowledge that other disciplines have to offer. It’s time that Computational Economists take a deeper look and use technology to create better models of what is really going on in the world of trade.
+
+Albert Einstein once said: 
+> "If I had only one hour to save the world, I would spend fifty-five minutes defining the problem, and only five minutes finding the solution."
+
+At the end of the day, it is clear to me that the problem of understanding trade, and the informational role of prices is the most fundamental to a computational economist. There a number of different ways to accomplish that goal, and I hope that some of these suggestions are insightful
 
 ### Works Cited
 
