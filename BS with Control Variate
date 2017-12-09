@@ -32,8 +32,8 @@ def BSwithDelta(K,T,S, sig,r,div,N, M):
   maxes = np.zeros(M)
   
   for j in range(M):
-    z = np.random.normal(size=(N))
-    
+    z = np.random.normal(size=(int(N/2))
+    z = np.concatenate((z,-z))
     St[0] = S
     cv[0] = 0
     
