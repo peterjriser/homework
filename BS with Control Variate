@@ -32,7 +32,8 @@ def BSwithDelta(K,T,S, sig,r,div,N, M):
   maxes = np.zeros(M)
   
   for j in range(M):
-    z = np.random.normal(size=N)
+    z = np.random.normal(size=(N))
+    
     St[0] = S
     cv[0] = 0
     
@@ -46,8 +47,10 @@ def BSwithDelta(K,T,S, sig,r,div,N, M):
     x = cv.mean()
     maxes[j] = VanillaCallPayoff(np.max(St), K) + beta1*x
     
-  callprc = maxes.mean()*np.exp(-r * T)  
+  callprc = maxes.mean()*np.exp(-r * T) 
+  sterr = maxes.std()/np.sqrt(len(maxes))
   print("The Black Scholes Price of this option:", callprc)
+  print("The Standard Error of this simulation is:", sterr)
 start = time.time()
 BSwithDelta(K,T,S,sig,r,div,N,M)
 end = time.time()
